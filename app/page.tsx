@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <header className="flex bg-gray-800 h-12 items-center px-5 justify-between">
+    <main className="min-h-screen font-mono">
+      <header className="flex bg-gray-800 h-12 items-center px-5 justify-between sticky top-0">
           <div>
             <Image alt="paloma" src="/paloma.jpg" width={50} height={50} />
           </div>
@@ -15,12 +15,30 @@ export default function Home() {
 </svg>
           </div>
         </header>
-      <div className= "font-mono text-sm h-full">
+      <section className= "text-sm h-full min-h-[calc(100vh-3rem)]">
         
         <h1 className= "mx-auto text-3xl w-fit py-10"> 
           {"Paloma Land"}
         </h1>
-      </div>
+      </section>
+      <section className='min-h-[calc(100vh-3rem)]'>
+        <h2 className= "mx-auto text-3xl w-fit py-10">
+          {"About Me"}
+
+        </h2>
+      </section>
+      <section className='min-h-[calc(100vh-3rem)]'>
+        <h2 className= "mx-auto text-3xl w-fit py-10">
+          {"Projects"}
+
+        </h2>
+      </section>
+      <section className='min-h-[calc(100vh-3rem)]'>
+        <h2 className= "mx-auto text-3xl w-fit py-10">
+          {"Contact"}
+
+        </h2>
+      </section>
     </main>
   )
 }
