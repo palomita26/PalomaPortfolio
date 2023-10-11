@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 export default function Home() {
   return (
@@ -11,32 +12,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="sm:hidden">
-          <svg
-            width="35px"
-            height="35px"
-            viewBox="0 0 24 24"
-            fill="white"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 18L20 18"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 12L20 12"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 6L20 6"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
+          <HamburgerMenu />
         </div>
         <div className="hidden sm:flex justify-around w-full max-w-sm">
           <Link href="#about"> about </Link>
