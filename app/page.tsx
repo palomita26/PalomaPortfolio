@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-//test prettier lint staged
-
 export default function Home() {
   return (
     <main className="min-h-screen font-mono">
